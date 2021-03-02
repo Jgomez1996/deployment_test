@@ -1,0 +1,85 @@
+table, tr, th, td {
+    outline: 1px solid black;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
+
+#add_new_show {
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#all_shows_h1, #create_h1, #edit_h1 {
+    text-align: center;
+    display: block;
+}
+
+#index_div {
+    width: 500px;
+    height: 500px; 
+}
+
+.actions {
+    display: inline-block;
+    border: none;
+    text-decoration: underline;
+    background-color:white;
+    color: #0000EE;
+    font: 16px "Times New Roman";
+    
+}
+
+.delete {
+    border: none;
+    text-decoration: underline;
+    background-color:white;
+    color: #0000EE;
+    font: 16px "Times New Roman";
+}
+
+.show_info {
+    margin-left: 10px;
+}
+
+#description {
+    margin-bottom: 100px;
+}
+
+#create_div, #edit_div {
+    outline: auto;
+    padding: 30px;
+    display: block;
+}
+
+#create_form {
+    display: flex;
+    justify-content: center;
+}
+
+.user_info {
+    margin: 10px;
+}
+
+#go_back {
+    padding: 10px;
+    margin: 10px;
+}
+
+#description_box {
+    width: 300px;
+    height: 100px;
+    padding:10px;
+    
+}
+
+#description_label {
+    vertical-align: top;
+}
+
+#update {
+    display: block;
+}

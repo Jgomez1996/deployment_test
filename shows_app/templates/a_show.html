@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Info</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+</head>
+<body>
+    <h1>{{ a_show.title }}</h1>
+    <p class="show_info">Title: {{ a_show.title }}</p>
+    <p class="show_info">Network: {{ a_show.network }}</p>
+    <p class="show_info">Release Date: {{ a_show.release_date }}</p>
+    <p id="description" class="show_info">Description: {{ a_show.description }}</p>
+    <P class="show_info">Last Updated: {{ a_show.updated_at }}</P>
+    <form class="actions" action="/shows/{{a_show.id}}/destroy" method="POST">
+            {% csrf_token %}
+            <input class="actions" class="delete" type="submit" value="Delete" />
+          </form>
+          <p class="actions"> | </p>
+          <a class="actions" href="/shows/{{a_show.id}}/edit">Edit</a>
+          <p class="actions"> | </p>
+    <a class="actions" href="/shows">Go Back</a>
+</body>
+</html>
